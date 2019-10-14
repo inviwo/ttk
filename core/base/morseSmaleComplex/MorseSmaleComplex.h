@@ -339,7 +339,7 @@ namespace ttk {
       return 0;
     }
 
-    inline int setInputScalarField(void *const data) {
+    inline int setInputScalarField(const void *const data) {
 #ifndef TTK_ENABLE_KAMIKAZE
       if(!abstractMorseSmaleComplex_) {
         return -1;
@@ -349,7 +349,7 @@ namespace ttk {
       return 0;
     }
 
-    inline int setInputOffsets(void *const data) {
+    inline int setInputOffsets(const void *const data) {
 #ifndef TTK_ENABLE_KAMIKAZE
       if(!abstractMorseSmaleComplex_) {
         return -1;
