@@ -26,6 +26,7 @@
 #endif
 
 #include <vector>
+#include <random>
 
 namespace ttk {
   namespace ftr {
@@ -317,7 +318,9 @@ namespace ttk {
       }
 
       void shuffleLeaves() {
-        std::random_shuffle(leaves_.begin(), leaves_.end());
+        std::random_device rd;
+        std::mt19937 g(rd());
+        std::shuffle(leaves_.begin(), leaves_.end(), g);
       }
 
       // some arc may be pending due to symbolic merge during computation
