@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.12)
 project(ttk VERSION 0.9.9 LANGUAGES CXX)
 
 option(TTK_BUILD_VTK_WRAPPERS "Build the TTK VTK Wrappers" ON)
